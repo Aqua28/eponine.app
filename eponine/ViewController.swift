@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var start_button: UIButton!
+    @IBAction func start_stylin_tapped(_ sender: Any) {
+        start_button.setTitle("loading", for: .normal)
+        start_button.
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
