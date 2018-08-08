@@ -24,8 +24,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-72-DSf">
-                                <rect key="frame" x="134.5" y="392" width="106" height="39"/>
+                                <rect key="frame" x="132.5" y="392" width="110" height="39"/>
                                 <color key="backgroundColor" red="0.39048429550000002" green="0.1242450028" blue="0.41029626520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="AwY-Ux-Lgt"/>
+                                    <constraint firstAttribute="width" constant="110" id="e9L-bs-gbC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Start stylin'">
@@ -41,22 +45,61 @@
                                     <action selector="start_stylin_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjv-on-t0o"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UOw-8Q-u4i">
+                                <rect key="frame" x="139" y="487" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Pog-zp-MbX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-HM-dor">
+                                <rect key="frame" x="139" y="443" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5Mk-h9-qxz"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wdw-iF-C0p"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-VH-l3F">
+                                <rect key="frame" x="37.5" y="318.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ohf-Fy-AV7"/>
+                                    <constraint firstAttribute="height" constant="30" id="d0h-s2-tUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UOw-8Q-u4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JW7-XO-QGX"/>
                             <constraint firstItem="yQn-72-DSf" firstAttribute="top" secondItem="JMm-6D-8Hg" secondAttribute="bottom" constant="180" id="KIc-kd-4lI"/>
+                            <constraint firstItem="CM5-HM-dor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VVM-xX-JoM"/>
                             <constraint firstItem="yQn-72-DSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNS-k3-gU4"/>
+                            <constraint firstItem="UOw-8Q-u4i" firstAttribute="top" secondItem="CM5-HM-dor" secondAttribute="bottom" constant="14" id="kLT-bv-xLb"/>
+                            <constraint firstItem="aJp-VH-l3F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mgs-Vx-cfy"/>
+                            <constraint firstItem="aJp-VH-l3F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="osf-S3-IEK"/>
                             <constraint firstItem="JMm-6D-8Hg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="po7-Kn-Mfg"/>
                             <constraint firstItem="JMm-6D-8Hg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="vFj-hS-DgX"/>
+                            <constraint firstItem="CM5-HM-dor" firstAttribute="top" secondItem="yQn-72-DSf" secondAttribute="bottom" constant="12" id="yMH-MV-CEL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="result" destination="aJp-VH-l3F" id="CLP-ay-jAp"/>
                         <outlet property="start_button" destination="yQn-72-DSf" id="PlS-UJ-HAH"/>
+                        <outlet property="text1" destination="CM5-HM-dor" id="KUj-dK-zUn"/>
+                        <outlet property="text2" destination="UOw-8Q-u4i" id="z6G-XR-dUk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="100" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
