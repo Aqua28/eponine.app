@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4188420211D1B3F00FFBB1C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418841F211D1B3F00FFBB1C /* TableViewController.swift */; };
+		B4188426211D4E8500FFBB1C /* EnlargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4188425211D4E8500FFBB1C /* EnlargeViewController.swift */; };
 		B4264DD7211B689F0097F018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264DD6211B689F0097F018 /* AppDelegate.swift */; };
 		B4264DD9211B689F0097F018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4264DD8211B689F0097F018 /* ViewController.swift */; };
 		B4264DDC211B689F0097F018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4264DDA211B689F0097F018 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		B418841F211D1B3F00FFBB1C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; tabWidth = 6; };
+		B4188425211D4E8500FFBB1C /* EnlargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargeViewController.swift; sourceTree = "<group>"; };
 		B4264DD3211B689F0097F018 /* eponine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eponine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4264DD6211B689F0097F018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4264DD8211B689F0097F018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B4264DD6211B689F0097F018 /* AppDelegate.swift */,
+				B4188425211D4E8500FFBB1C /* EnlargeViewController.swift */,
 				B4264DD8211B689F0097F018 /* ViewController.swift */,
 				B4264DDA211B689F0097F018 /* Main.storyboard */,
 				B418841F211D1B3F00FFBB1C /* TableViewController.swift */,
@@ -141,6 +144,7 @@
 				B4264DD9211B689F0097F018 /* ViewController.swift in Sources */,
 				B4188420211D1B3F00FFBB1C /* TableViewController.swift in Sources */,
 				B4264DD7211B689F0097F018 /* AppDelegate.swift in Sources */,
+				B4188426211D4E8500FFBB1C /* EnlargeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +289,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6879UGLRU;
 				INFOPLIST_FILE = eponine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +308,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6879UGLRU;
 				INFOPLIST_FILE = eponine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

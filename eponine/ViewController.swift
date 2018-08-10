@@ -16,8 +16,10 @@ class ViewController: UIViewController {
     
     @IBAction func start_stylin_tapped(_ sender: Any) {
         start_button.setTitle("loading", for: .normal)
-        
-        performSegue(withIdentifier: "firstSegue", sender: "👨‍🍳" )
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        self.performSegue(withIdentifier: "firstSegue", sender: "👨‍🍳" )
+        }
+       
         
     }
 

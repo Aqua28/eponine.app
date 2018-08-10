@@ -11,7 +11,8 @@ import UIKit
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var things = ["👒","👛","👗","💄","💍","🌸","👚","👓"]
-    
+     @IBOutlet weak var fashion_list: UITableView!
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return things.count
     }
@@ -23,8 +24,18 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell
     }
     
-
-    @IBOutlet weak var fashion_list: UITableView!
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let thing = things[indexPath.row]
+        performSegue(withIdentifier: "enlarge", sender: thing)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let enlargeVC = segue.destination as! EnlargeViewController
+        
+        enlargeVC.enlargement = sender as! String
+        
+ 
+    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
